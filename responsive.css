@@ -1,0 +1,142 @@
+@media (max-width: 820px) {
+  .quote-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .summary-box {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(100% - 1.25rem, var(--max-width));
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .info-strip .container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .header-inner {
+    min-height: 68px;
+    gap: 0.45rem;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 0.45rem;
+    font-size: 0.82rem;
+    letter-spacing: 0;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+  }
+
+  .site-header .quote-pill {
+    display: inline-flex;
+    flex: 0 0 auto;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+    padding: 0.3rem;
+  }
+
+  .quote-count {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .nav-toggle {
+    flex: 0 0 44px;
+  }
+
+  .page-banner {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .page-banner h1 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    overflow-wrap: anywhere;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions,
+  .summary-actions {
+    width: 100%;
+  }
+
+  .hero-actions .primary-btn,
+  .hero-actions .outline-btn,
+  .summary-actions .primary-btn,
+  .summary-actions .outline-btn {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+  }
+
+  .quote-layout {
+    padding: 1rem 0 2.5rem;
+  }
+
+  .quote-item {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .quote-controls {
+    display: grid;
+    grid-template-columns: 44px minmax(36px, 1fr) 44px minmax(76px, auto);
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .quote-controls .qty-value {
+    min-height: 44px;
+    display: grid;
+    place-items: center;
+  }
+
+  .quote-controls .remove-quote-item {
+    min-width: 76px;
+    padding: 0.4rem;
+  }
+
+  .summary-box {
+    padding: 1.1rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .brand > span:last-child {
+    display: none;
+  }
+
+  .brand {
+    flex: 0 0 auto;
+  }
+
+  .header-inner {
+    gap: 0.3rem;
+  }
+
+  .quote-controls {
+    grid-template-columns: 44px minmax(24px, 1fr) 44px minmax(68px, auto);
+    gap: 0.25rem;
+  }
+}

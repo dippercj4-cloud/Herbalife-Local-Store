@@ -1,0 +1,224 @@
+.catalog-section {
+  padding: 2rem 0 4rem;
+}
+
+.catalog-toolbar {
+  margin-bottom: 1rem;
+}
+
+.filter-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  padding: 1rem;
+}
+
+.field {
+  min-width: 0;
+}
+
+.category-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.category-nav-button {
+  min-height: 44px;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid rgba(36, 91, 53, 0.2);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff 0%, #f5f7f0 100%);
+  color: var(--green-900);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.category-nav-button[aria-pressed="true"] {
+  background: linear-gradient(180deg, #e3f2c8 0%, #cfe7a9 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.category-nav-button span {
+  margin-left: 0.3rem;
+  font-size: 0.8em;
+}
+
+.catalog-result-count {
+  margin: 0.75rem 0 1.5rem;
+  color: var(--gray-600);
+  font-weight: 700;
+}
+
+.catalog-category {
+  scroll-margin-top: 100px;
+  margin-top: 2.25rem;
+}
+
+.catalog-category-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(36, 91, 53, 0.16);
+  border-left: 5px solid var(--green-700);
+  border-radius: var(--radius-md);
+  background: linear-gradient(110deg, #fff 0%, #f0f5e9 100%);
+  box-shadow: 0 7px 16px rgba(40, 51, 43, 0.08);
+}
+
+.catalog-category-header .eyebrow {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.65rem;
+}
+
+.catalog-category-header h2 {
+  margin: 0.55rem 0 0.15rem;
+  color: var(--green-900);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.2;
+}
+
+.catalog-category-header p {
+  margin: 0;
+  color: var(--gray-600);
+}
+
+.category-count {
+  flex: 0 0 auto;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: var(--green-100);
+  color: var(--green-900);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.catalog-card {
+  min-width: 0;
+  min-height: 100%;
+}
+
+.catalog-card .card-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, #f3f6ed, #e6eddd);
+}
+
+.catalog-card .card-media img {
+  object-fit: contain;
+  padding: 0.55rem;
+}
+
+.image-note {
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--gray-600);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.catalog-card .card-content {
+  padding: 0.8rem;
+}
+
+.catalog-card .card-meta {
+  margin-bottom: 0.55rem;
+}
+
+.catalog-card .category-pill {
+  max-width: 100%;
+  font-size: 0.62rem;
+}
+
+.catalog-card .card-content h3 {
+  font-size: 1rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.catalog-card .product-description {
+  margin-bottom: 0.8rem;
+  padding: 0.7rem 0.8rem;
+  border-left: 4px solid #7cc043;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, rgba(124, 192, 67, 0.12), rgba(36, 91, 53, 0.04));
+  color: var(--green-900);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.catalog-card .card-footer {
+  display: grid;
+  align-items: stretch;
+  gap: 0.55rem;
+}
+
+.catalog-card .presentation {
+  font-size: 0.75rem;
+}
+
+.catalog-card .add-to-quote {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.55rem 0.45rem;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 359px) {
+  .catalog-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 680px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+
+  .catalog-card .card-content {
+    padding: 1rem;
+  }
+
+  .catalog-card .card-content h3 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 679px) {
+  .filter-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .catalog-category-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .category-navigation {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

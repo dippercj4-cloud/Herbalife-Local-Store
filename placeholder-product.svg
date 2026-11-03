@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8faf4"/>
+      <stop offset="1" stop-color="#e7efdf"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="18" fill="url(#background)"/>
+  <circle cx="200" cy="112" r="44" fill="#d6e8c1"/>
+  <path d="M183 118h34M200 101v34" stroke="#4d923d" stroke-linecap="round" stroke-width="8"/>
+  <rect x="105" y="188" width="190" height="2" rx="1" fill="#c6d6bd"/>
+  <text x="200" y="222" fill="#245b35" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" text-anchor="middle">IMAGEN PENDIENTE</text>
+</svg>
